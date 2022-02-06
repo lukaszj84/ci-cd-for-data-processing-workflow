@@ -1,7 +1,7 @@
 {
-  "gcp_project": "${GCP_PROJECT_ID}",
-  "gcp_region": "${COMPOSER_REGION}",
-  "gcp_zone": "${COMPOSER_ZONE_ID}",
+  "lmpl-bi-dev": "${GCP_PROJECT_ID}",
+  "europe-west1": "${COMPOSER_REGION}",
+  "europe-west1-b": "${COMPOSER_ZONE_ID}",
   "dataflow_jar_location_test": "${DATAFLOW_JAR_BUCKET_TEST}",
   "dataflow_jar_file_test": "to_be_overriden",
   "gcs_input_bucket_test": "${INPUT_BUCKET_TEST}",
