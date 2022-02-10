@@ -17,24 +17,24 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-export TEST='lmpl-bi-dev'
+export TEST='bi-dev'
 export GCP_PROJECT_ID=$(gcloud config list --format 'value(core.project)')
 export PROJECT_NUMBER=$(gcloud projects describe "${GCP_PROJECT_ID}" --format='get(projectNumber)')
-export DATAFLOW_JAR_BUCKET_TEST="${GCP_PROJECT_ID}-composer-dataflow-source-${TEST}"
-export INPUT_BUCKET_TEST="${GCP_PROJECT_ID}-composer-input-${TEST}"
-export RESULT_BUCKET_TEST="${GCP_PROJECT_ID}-composer-result-${TEST}"
-export REF_BUCKET_TEST="${GCP_PROJECT_ID}-composer-ref-${TEST}"
-export DATAFLOW_STAGING_BUCKET_TEST="${GCP_PROJECT_ID}-dataflow-staging-${TEST}"
-export PROD='lmpl-bi-pro'
-export DATAFLOW_JAR_BUCKET_PROD="${GCP_PROJECT_ID}-composer-dataflow-source-${PROD}"
-export INPUT_BUCKET_PROD="${GCP_PROJECT_ID}-composer-input-${PROD}"
-export RESULT_BUCKET_PROD="${GCP_PROJECT_ID}-composer-result-${PROD}"
-export DATAFLOW_STAGING_BUCKET_PROD="${GCP_PROJECT_ID}-dataflow-staging-${PROD}"
+export DATAFLOW_JAR_BUCKET_dev="${GCP_PROJECT_ID}-composer-dataflow-source-${dev}"
+export INPUT_BUCKET_dev="${GCP_PROJECT_ID}-composer-input-${dev}"
+export RESULT_BUCKET_dev="${GCP_PROJECT_ID}-composer-result-${dev}"
+export REF_BUCKET_dev="${GCP_PROJECT_ID}-composer-ref-${dev}"
+export DATAFLOW_STAGING_BUCKET_dev="${GCP_PROJECT_ID}-dataflow-staging-${dev}"
+export pro='bi-pro'
+export DATAFLOW_JAR_BUCKET_pro="${GCP_PROJECT_ID}-composer-dataflow-source-${pro}"
+export INPUT_BUCKET_pro="${GCP_PROJECT_ID}-composer-input-${pro}"
+export RESULT_BUCKET_pro="${GCP_PROJECT_ID}-composer-result-${pro}"
+export DATAFLOW_STAGING_BUCKET_pro="${GCP_PROJECT_ID}-dataflow-staging-${pro}"
 export COMPOSER_REGION='europe-west1'
 export RESULT_BUCKET_REGION="${COMPOSER_REGION}"
 export COMPOSER_ZONE_ID='europe-west1-b'
 
-export COMPOSER_ENV_NAME='data-pipeline-composer'
-export SOURCE_CODE_REPO='data-pipeline-source'
-export COMPOSER_DAG_NAME_TEST='test_word_count'
-export COMPOSER_DAG_NAME_PROD='prod_word_count'
+export COMPOSER_ENV_NAME='bi-dev'
+export SOURCE_CODE_REPO='github_adeo_lmpl-bi-dev'
+export COMPOSER_DAG_NAME_dev='europe-west1-bi-dev-f6536b5b-bucket'
+export COMPOSER_DAG_NAME_pro='pro_word_count'
